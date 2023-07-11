@@ -20,4 +20,4 @@ This project is licensed under the MIT license
 Please open a pull request with your changes, and I will review them.
 
 ## Disclaimer
-This is a fun project I used to learn Javascript.
+This is a fun project to learn Javascript. 
