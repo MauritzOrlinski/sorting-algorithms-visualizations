@@ -18,3 +18,6 @@ This project is licensed under the MIT license
 ## Contributing 
  Contributing is welcomed in this Projcet.To contribute please follow these instructions of the owner: 
 Please open a pull request with your changes, and I will review them.
+
+## Disclaimer
+This is a fun project I used to learn Javascript.
