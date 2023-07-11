@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#sorting-area {
+    width: 50vw;
+    height: 50vh;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting algorithm</title>
+    <script src="src/sorting.js"></script>
+    <link href="build.css" rel="stylesheet">
+</head>
+<body >
+<div class="m-10 xl:grid xl:grid-cols-2 xl:justify-items-stretch w-[95%] h-full">
+    <div class="text-2xl">
+        <h1 class="text-5xl font-mono">Sorting algorithms</h1>
+        <div class="p-6 mt-3 grid grid-cols-1 gap-1">
+            <input class="shadow-sm border-gray-300 rounded-lg m-2 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-400" type="text" id="input" placeholder="Enter numbers to sort">
+            <button class="p-2 px-5 bg-black text-gray-400" onclick="sort()">Sort</button>
+            <button class="p-2 px-5 bg-black text-gray-400" onclick="reset()">Reset</button>
+        </div>
+        <div>
+            <h2 class="text-5xl font-mono">Stats</h2>
+            <div class="p-6  mt-3">
+                <p class="text-gray-800 font-mono">Sorting algorithm: <span id="sortingAlgorithm">Bubble sort</span></p>
+                <p class="text-gray-800 font-mono">Array size: <span id="arraySize">0</span></p>
+                <p class="text-gray-800 font-mono">Comparisons: <span id="comparisons">0</span></p>
+                <p class="text-gray-800 font-mono">Swaps: <span id="iterations">0</span></p>
+                <p class="text-gray-800 font-mono">Time: <span id="time">0</span> ms</p>
+                <p class="text-gray-800 font-mono">Sorted: <span id="isSorted">False</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="w-full h-full" id="sorting-visualisation">
+        <canvas class="bg-black p-5 w-full h-full" id="canvas" width="1000" height="1000" ></canvas>
+    </div>
+</div>
+    <div class="text-2xl m-10">
+        <h3 class="text-5xl my-5">
+            Further Settings
+        </h3>
+        <input class="border-black border-2 rounded-lg" type="text" id="speed" placeholder="speed">
+        <select name="sorting-algorithm" id="sorting-algorithm">
+            <option class="text-lg" value="bubble-sort">Bubble sort</option>
+            <option class="text-lg" value="insertion-sort">Insertion sort</option>
+            <option class="text-lg" value="selection-sort">Selection sort</option>
+        </select>
+        <button onclick="updateSettings()">Update Settings</button>
+    </div>
+    <footer class="text-2xl mt-auto">
+        <div class="bg-black">
+            <div class="flex flex-row items-center justify-between py-4 ">
+                <p class="text-lg text-gray-400 ">© 2023 Mauritz Orlinski</p>
+                <div class="flex text-gray-200">
+                    <a class="mr-4 hover:scale-110" href="https://github.com/MauritzOrlinski">GitHub</a>
+                    <a class="mr-4 hover:scale-110" href="https://mauritzorlinski.com">mauritzorlinski.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
