@@ -150,6 +150,7 @@ function reset() {
 }
 
 function sort() {
+    gotReset = false;
     document.getElementById("start-sort-btn").innerHTML = "Reset";
     if (isRunning) {
         reset();
