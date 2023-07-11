@@ -131,3 +131,6 @@ dist
 
 # ignore .idea
 .idea
+
+# ignore pnpm
+pnpm-lock.yaml
