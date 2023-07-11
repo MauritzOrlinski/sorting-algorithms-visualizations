@@ -146,17 +146,19 @@ function reset() {
     document.getElementById("isSorted").innerHTML = "False";
     const numberOfElements = document.getElementById("input").value;
     updateVisualisation([]);
+    document.getElementById("start-sort-btn").innerHTML = "Sort";
 }
 
 function sort() {
+    document.getElementById("start-sort-btn").innerHTML = "Reset";
     if (isRunning) {
-        alert("Already running! Press reset to stop.");
+        reset();
         return;
     }
     isRunning = true;
     let numberOfElements = document.getElementById("input").value;
-    if (isNaN(numberOfElements) || numberOfElements === "") {
-        alert("Must input numbers, otherwise the default value of 100 will be used.");
+    if (isNaN(numberOfElements) || numberOfElements === "" || numberOfElements < 0) {
+        alert("Must input an Integer, otherwise the default value of 100 will be used.");
         numberOfElements = 100;
     }
     document.getElementById("arraySize").innerHTML = numberOfElements;
@@ -192,10 +194,10 @@ async function isSorted(array) {
 
 function updateSettings() {
     sleepTime = document.getElementById("speed").value;
-    if (isNaN(sleepTime)) {
-        alert("Must input a number for the running speed, otherwise the default value of 10 will be used.");
+    if (isNaN(sleepTime) || sleepTime < 0) {
+        alert("Must input an Integer for the wait time, otherwise the default value of 10 will be used.");
         sleepTime = 10;
     }
     selectedAlgorithm = document.getElementById("sorting-algorithm").value;
-    console.log(selectedAlgorithm);
+    reset();
 }

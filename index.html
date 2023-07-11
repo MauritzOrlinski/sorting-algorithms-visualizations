@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <title>Sorting algorithm</title>
     <script src="src/sorting.js"></script>
-    <link href="build.css" rel="stylesheet">
+    <link href="dist/output.css" rel="stylesheet">
 </head>
 <body >
 <div class="m-10 xl:grid xl:grid-cols-2 xl:justify-items-stretch w-[95%] h-full">
     <div class="text-2xl">
         <h1 class="text-5xl font-mono">Sorting algorithms</h1>
         <div class="p-6 mt-3 grid grid-cols-1 gap-1">
-            <input class="shadow-sm border-gray-300 rounded-lg m-2 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-400" type="text" id="input" placeholder="Enter numbers to sort">
-            <button class="p-2 px-5 bg-black text-gray-400" onclick="sort()">Sort</button>
-            <button class="p-2 px-5 bg-black text-gray-400" onclick="reset()">Reset</button>
+            <input class="border-2 border-black rounded-lg p-1" type="text" id="input" placeholder="Enter amount to sort">
+            <button class="p-2 px-5 bg-black text-gray-400 rounded-lg" onclick="sort()" id="start-sort-btn">Sort</button>
         </div>
         <div>
             <h2 class="text-5xl font-mono">Stats</h2>
@@ -31,22 +30,23 @@
         <canvas class="bg-black p-5 w-full h-full" id="canvas" width="1000" height="1000" ></canvas>
     </div>
 </div>
+
     <div class="text-2xl m-10">
         <h3 class="text-5xl my-5">
             Further Settings
         </h3>
-        <input class="border-black border-2 rounded-lg" type="text" id="speed" placeholder="speed">
+        <input class="border-2 border-black rounded-lg p-1 p-" type="text" id="speed" placeholder="time between iteration">
         <select name="sorting-algorithm" id="sorting-algorithm">
             <option class="text-lg" value="bubble-sort">Bubble sort</option>
             <option class="text-lg" value="insertion-sort">Insertion sort</option>
             <option class="text-lg" value="selection-sort">Selection sort</option>
         </select>
-        <button onclick="updateSettings()">Update Settings</button>
+        <button class="border-2 border-black rounded-lg p-1 ml-5" onclick="updateSettings()">Update Settings</button>
     </div>
-    <footer class="text-2xl mt-auto">
+    <footer class="text-3xl mt-auto">
         <div class="bg-black">
             <div class="flex flex-row items-center justify-between py-4 ">
-                <p class="text-lg text-gray-400 ">© 2023 Mauritz Orlinski</p>
+                <p class="text-gray-400 ">© 2023 Mauritz Orlinski</p>
                 <div class="flex text-gray-200">
                     <a class="mr-4 hover:scale-110" href="https://github.com/MauritzOrlinski">GitHub</a>
                     <a class="mr-4 hover:scale-110" href="https://mauritzorlinski.com">mauritzorlinski.com</a>
