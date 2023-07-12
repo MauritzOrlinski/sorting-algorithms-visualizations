@@ -103,11 +103,16 @@ async function insertionSort(array) {
         document.getElementById("iterations").innerHTML = swaps;
         document.getElementById("time").innerHTML = time;
     }
+    updateVisualisation(array);
+    isRunning = false;
+    if (isSorted(array)) {
+        document.getElementById("isSorted").innerHTML = "True";
+    }
 }
 
 async function selectionSort(array) {
     let currentTimestamp = new Date().getTime();
-    for (let i = 0; i < array.length - 2; i++) {
+    for (let i = 0; i < array.length - 1; i++) {
         minmalElementIndex = i;
         for (let j = i + 1; j < array.length; j++) {
             if (gotReset) {
@@ -131,6 +136,12 @@ async function selectionSort(array) {
         const tmp = array[minmalElementIndex];
         array[minmalElementIndex] = array[i];
         array[i] = tmp;
+    }
+    if (array)
+    updateVisualisation(array);
+    isRunning = false;
+    if (isSorted(array)) {
+        document.getElementById("isSorted").innerHTML = "True";
     }
 }
 
