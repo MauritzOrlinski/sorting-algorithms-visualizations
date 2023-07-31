@@ -1,6 +1,7 @@
 # Sorting Algorithms Visualizer
-
 > This project is a web application that visualizes sorting algorithms
+
+<img src="sorting-example.gif" alt="A demo of the website">
 
 ## Introduction
 
@@ -26,7 +27,9 @@ This project is licensed under the MIT license
 ## Contributing
 
 Contributing is welcomed in this Project. To contribute please follow these instructions of the owner:
-Please open a pull request with your changes, and I will review them.
+1. Please fork the Repository
+2. Commit your changes
+3. Please open a pull request with your changes, and I will review them.
 
 ## Disclaimer
 
