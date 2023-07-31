@@ -1,6 +1,8 @@
 # Sorting Algorithms Visualizer
-
 > This project is a web application that visualizes sorting algorithms
+
+> ![alt text](sorting-example.gif)
+
 
 ## Introduction
 
